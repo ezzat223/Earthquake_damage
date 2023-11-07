@@ -2,10 +2,11 @@
 import streamlit as st
 import pandas as pd
 import sys
+import joblib
 
 sys.path.append("models/")
 from ordinal_dummies import *
-import joblib
+
 
 # ----------------------------------------------- #
 # ---------------------------- Streamlit configs ---------------------------- #
