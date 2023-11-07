@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import sys
 
-sys.path.append("../models")
+sys.path.append("models/")
 from ordinal_dummies import *
 import joblib
 
@@ -17,8 +17,8 @@ st.title('Earthquake damage')
 st.info('Machine Learning Classification Project')
 
 # ---------------------------- Load ---------------------------- #
-model = joblib.load('../models/model.h5')
-scaler = joblib.load('../models/scaler.h5')
+model = joblib.load('models/model.h5')
+scaler = joblib.load('models/scaler.h5')
 
 # ---------------------------- Technical solution ---------------------------- #
 technical_solution_proposed = st.selectbox("Technical solution proposed", ['Reconstruction', 'Major repair', 'Minor repair', 'No need'])
