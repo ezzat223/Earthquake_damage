@@ -18,8 +18,8 @@ st.title('Earthquake damage')
 st.info('Machine Learning Classification Project')
 
 # ---------------------------- Load ---------------------------- #
-model = joblib.load('models/model.h5')
-scaler = joblib.load('models/scaler.h5')
+model = joblib.load('models/model.pkl')
+scaler = joblib.load('models/scaler2.pkl')
 
 # ---------------------------- Technical solution ---------------------------- #
 technical_solution_proposed = st.selectbox("Technical solution proposed", ['Reconstruction', 'Major repair', 'Minor repair', 'No need'])
